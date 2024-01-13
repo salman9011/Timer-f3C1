@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section class="timer flex">
+        <div class="header">
+            <h1>Multiple Timers App</h1>
+        </div>
+        <div class="input flex">
+            <div> Set Time :</div>
+            <form class="input flex">
+                <div><input type="number" name="hours" id="hour" placeholder="HH" min="0" max="12"> :
+                    <input type="number" name="minutes" id="minute" min="0" max="59" placeholder="MM"> :
+                    <input type="number" name="seconds" id="second" min="0" max="60" placeholder="SS">
+                </div>
+                <div class="btn"><button>Set</button></div>
+            </form>
+        </div>
+        <div class="currentTimers flex">
+            <h3>Current Timers</h3> 
+            <audio src="./WhatsApp Audio 2024-01-13 at 14.39.16_24251aba.mp3" ></audio>
+            <h5 id="pick" style="display: flex;">You have No Timers Currently</h5>           
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
